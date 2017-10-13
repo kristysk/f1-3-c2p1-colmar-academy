@@ -1,0 +1,745 @@
+html {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    color: hsla(0, 6%, 50%, 1);
+    background-color: white;
+}
+h1:first-letter,
+h2:first-letter,
+h3:first-letter,
+li:first-letter,
+a:first-letter,
+div:first-letter {
+    text-transform: uppercase;
+}
+abbr {
+    text-decoration: none;
+}
+#startbtn {
+    border-radius: 10px;
+}
+a,
+a.readmore,
+.coursetextbox h3,
+.coursetextbox-mob {
+    border-radius: 5px;
+    transition: background-color 1s, color 1s;
+}
+a:hover,
+#startbtn:hover,
+a.readmore:hover,
+.coursetextbox h3:hover,
+.coursetextbox-mob:hover {
+    cursor: pointer;
+    background-color: hsla(30, 100%, 60%, 1);
+    color: hsla(0, 6%, 10%, 1);
+    transition: background-color 1s, color 1s;
+}
+h1 {
+    font-size: 3rem;
+    color: hsla(0, 6%, 20%, 1);
+}
+h2 {
+    font-size: 2rem;
+    color: hsla(0, 6%, 30%, 1);
+}
+h3 {
+    font-size: 1.5rem;
+    color: hsla(0, 6%, 40%, 1);
+}
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+img {
+    border-radius: 10px;
+}
+main {
+    margin-top: 4rem;
+}
+header,
+main {
+    border-bottom: solid 1px hsl(0, 6%, 90%);
+}
+.focused {
+    background-color: hsla(0, 6%, 90%, 1);
+}
+.imagebox img,
+.iconnav img,
+.splashimg {
+    height: 100%;
+}
+.leadimg,
+.stdimg,
+.courseimg {
+    width: 100%;
+}
+
+
+/*head section*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+#navbar {
+    padding: 0 1rem 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+}
+.logobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagebox {
+    height: 3rem;
+}
+.companybox {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Amaranth', sans-serif;
+    letter-spacing: 4px;
+}
+.colmar1 {
+    color: hsl(0, 6%, 30%);
+    font-weight: 800;
+}
+.colmar2 {
+    color: hsl(0, 6%, 50%);
+    font-weight: 400;
+}
+.navbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.topnav {
+    padding: .5rem;
+}
+
+/*Nav Bar Mobile*/
+#iconbar {
+    display: none;
+}
+.iconbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+a.iconnav {
+    height: 3rem;
+    padding: .5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    #companybox {
+        display: none;
+    }
+    #iconbar {
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+    }
+    #navbar {
+        display: none;
+    }
+}
+
+/*Splash*/
+.splashbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 5rem 2rem 1.5rem;
+    background-color: hsla(60, 10%, 90%, 1);
+}
+.splashimgbox {
+    margin-right: 1.5rem;
+    width: calc(60% + 3rem);
+}
+.splashimg {
+    width: 100%;
+    height: auto;
+}
+.splashbox {
+    padding: 2rem 2rem 2rem 1rem;
+    width: calc(40% - 3rem);
+}
+#startbtn {
+    background-color: hsla(0, 6%, 20%, 1);
+    color: white;
+    transition: background-color 1s, color 1s;
+    border-radius: 10px;
+    padding: .5rem;
+    margin: 2rem 0;
+    width: calc(100% - 8rem);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#sh1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#sh2 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+/*  Change to splash panel items as screen shrinks           */
+@media only screen and (max-width: 1260px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    #sh1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    #sh2 {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 1086px) {
+    .splashbar {
+        flex-direction: column;
+    }
+    .splashbar {
+        padding: 2rem 3rem;
+    }
+    .splashimgbox {
+        margin-right: 0;
+    }
+    .splashbox {
+        width: calc(60% + 3rem);
+        text-align: center;
+        padding: 0;
+    }
+    #sh1 {
+        padding: 1rem 1rem .5rem 1rem;
+    }
+    #sh2 {
+        padding: .5rem 1rem .5rem 1rem;
+    }
+    #startbtn {
+        padding: .5rem;
+        margin: .5rem 2rem .5rem 2rem;
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    #startbtn {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .splashbox {
+        width: 80%;
+    }
+    .splashimgbox {
+        width: 80%;
+    }
+    .splashbar {
+        padding: 2rem 2rem;
+    }
+    .splashbox h1 {
+        font-size: 1.5rem;
+    }
+    .splashbox h3 {
+        font-size: 1rem;
+    }
+}
+
+
+/* NewsFeed*/
+#newsfeedbar {
+    display: flex;
+}
+#leadarticlebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+.leadtextbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+}
+.leadtextbox h2 {
+    padding: 2rem 0 1.5rem 0;
+}
+.leadtext {
+    line-height: 1.5;
+}
+.leadsig {
+    padding-top: 2rem;
+    font-size: .75rem;
+}
+#stdarticlesbox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0 1rem 1rem;
+}
+.stdarticle {
+    display: flex;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+.stdarticle:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.stdimgbox {
+    width: 35%;
+}
+.stdimg {
+    width: calc(100% - 1rem);
+    margin: 1rem;
+}
+.stdtextbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65%;
+    padding-left: .5rem;
+}
+.stdtextbox h3 {
+    padding-left: .5rem;
+}
+.stdtext {
+    padding: .5rem;
+    line-height: 1.5;
+}
+a.readmore {
+    color: hsla(210, 100%, 57%, 1);
+    padding: .5rem;
+}
+.leadtextbox h2,
+
+
+#stdarticlesbox-mob {
+    display: none;
+    padding: 1rem 1rem 2rem 1rem;
+}
+.mobarticle:not(:last-child) {
+    margin-bottom: 4rem;
+}
+.mobarticle {
+    border-radius: 10px;
+}
+.mobarticle:last-child {
+    padding-bottom: 1.5rem;
+}
+.mobimgbox {
+    width: 100%;
+}
+.mobimg {
+    margin: 1rem;
+}
+.mobtextbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+}
+.mobtextbox h3,
+.mobtextbox p {
+    padding-left: .5rem;
+}
+@media only screen and (max-width: 1260px) {
+    .stdtext {
+        line-height: 1.2;
+    }
+    #stdarticlesbox {
+        width: 45%;
+    }
+    #leadarticlebox {
+        width: 55%;
+    }
+    .leadtextbox h2 {
+        font-size: 1.8rem;
+        padding: 1.75rem 0 1.25rem 0;
+    }
+    .leadsig {
+        padding-top: 1.75rem;
+    }
+}
+@media only screen and (max-width: 1086px) {
+    .stdtext {
+        font-size: .9rem;
+    }
+    .readmore {
+        font-size: .85rem;
+    }
+    .leadtextbox h2 {
+        font-size: 1.6rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+    .leadtext {
+        line-height: 1.5;
+    }
+    .leadsig {
+        padding-top: 1.5rem;
+    }
+    .stdtextbox h3 {
+        font-size: 1.25rem;
+    }
+    #stdarticlesbox {
+        width: 50%;
+    }
+    #leadarticlebox {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 890px) {
+    .leadtext {
+        line-height: 1.25;
+    }
+    .leadtextbox h2 {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 760px) {
+    #newsfeedbar {
+        justify-content: center;
+    }
+    #stdarticlesbox-mob {
+        display: flex;
+        flex-direction: column;
+    }
+    #leadarticlebox,
+    #stdarticlesbox {
+        display: none;
+    }
+    .mobtextbox h3 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .stdtext {
+        padding: .5rem 0;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+}
+
+/*courses*/
+
+#coursesbar {
+    background-color: hsla(60, 10%, 90%, 1);
+}
+#coursesbar h2 {
+    text-align: center;
+    padding-top: 2rem;
+}
+#courserow1,
+#courserow2 {
+    display: flex;
+}
+.coursesbox {
+    justify-content: center;
+    align-items: baseline;
+    padding: 2rem 4.5rem 0 4.5rem;
+}
+#courserow2 {
+    padding-bottom: 2rem;
+}
+.course {
+    width: calc((100% - 13rem)/3);
+    background-color: white;
+    border-radius: 10px;
+}
+.course:not(:last-child) {
+    margin-right: 2rem;
+}
+.courseimg {
+    width: calc(100% - 1rem);
+    margin: .5rem;
+}
+.coursetextbox {
+    padding: 1rem 1rem 2rem 1rem;
+    height: 8.5rem;
+    line-height: 1.5;
+}
+.courselabel {
+    padding: .5rem 0;
+}
+.coursetextbox h3 {
+    padding: .5rem;
+}
+.coursetextbox p {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+/*
+.coursetextbox h3:hover {
+    color: hsla(30,100%,70%,1);
+    cursor: pointer;
+}
+*/
+/*
+ *      Change it on mobile view to only have links
+ */
+#courserow-mob {
+    display: none;
+    padding: 1rem 1rem 2rem 1rem;
+}
+.coursetextbox-mob {
+    background-color: hsla(60, 10%, 90%, 1);
+    padding: 1rem 0 1.5rem 1rem;
+    border-radius: 10px;
+}
+.coursetextbox-mob:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+
+@media only screen and (max-width: 1260px) {
+    .course {
+        width: calc((100% - 10rem)/3);
+    }
+    .coursesbox {
+        padding: 2rem 3rem 0 3rem;
+    }
+    .coursetextbox {
+        height: 6rem;
+        line-height: 1.25;
+    }
+    .coursetextbox h3 {
+        font-size: 1.25rem;
+    }
+    .coursesubjects {
+        font-size: .85rem;
+    }
+    .courselabel {
+        padding: .35rem 0;
+    }
+}
+
+@media only screen and (max-width: 1086px) {
+    .coursetextbox {
+        height: 7rem;
+    }
+    .course {
+        width: calc((100% - 8rem)/3);
+    }
+    .coursesbox {
+        padding: 2rem 2rem 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .coursetextbox h3 {
+        font-size: 1rem;
+    }
+    .courselabel {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .coursetextbox {
+        height: 9rem;
+    }
+}
+@media only screen and (max-width: 690px) {
+    #courserow1 .coursetextbox {
+        height: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 660px) {
+    #courserow-mob {
+        display: flex;
+        flex-direction: column;
+    }
+    #courserow1,
+    #courserow2 {
+        display: none;
+    }
+    #coursesbar {
+        background-color: white;
+    }
+}
+
+/*R&D Section*/
+
+#RnDbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.RnDtitlebar {
+    text-align: center;
+}
+.RnDtitlebox {
+    padding: 2rem 0;
+}
+.RnDtitlebox h2 {}
+.RnDmainbar {
+    display: flex;
+}
+
+
+#RnDvideoblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 1.5rem;
+    padding-bottom: 2rem;
+    width: calc((100% - 3rem) * .6);
+}
+.RnDvideobox {}
+.RnDvideo {
+    width: 100%;
+    border-radius: 10px;
+}
+.RnDvideotextbox {}
+.RnDvideotextbox h3 {
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+.RnDvideotext {
+    line-height: 1.3;
+}
+
+
+#RnDarticlesblock,
+.RnDarticlebox,
+.RnDarticletextbox {
+    display: flex;
+}
+#RnDarticlesblock,
+.RnDarticletextbox {
+    flex-direction: column;
+}
+#RnDarticlesblock {
+    justify-content: flex-start;
+    width: calc((100% - 4rem) * .4);
+    padding-right: 1rem;
+}
+.RnDarticleimgbox {
+    width: calc((100% - 2rem) * .35);
+}
+.rndimg {
+    width: calc(100% - 1rem);
+    margin: .5rem;
+}
+.RnDarticlebox {
+    align-items: center;
+    border-radius: 10px;
+}
+.RnDarticletextbox {
+    padding: 1rem 0;
+    margin-left: .5rem;
+    width: calc((100% - 2rem) * .65);
+}
+.RnDarticletextbox h3 {
+    padding-bottom: 1rem;
+}
+.RnDarticletext {}
+
+
+#RnDarticlesblock-tablet {
+    display: none;
+}
+.RnDarticleblock-tablet,
+.RnDarticlebox-tablet,
+.RnDarticletextbox-tablet {
+    display: flex;
+}
+.RnDarticleblock-tablet {
+    flex-direction: column;
+    border-radius: 10px;
+}
+.RnDarticleblock-tablet h3 {
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+.RnDarticleimgbox-tablet {
+    width: calc((100% - 2rem) * .50);
+}
+.RnDarticletextbox-tablet {
+    align-items: center;
+    width: calc((100% - 2rem) * .50);
+    padding: 1rem 0;
+}
+/*
+ *      Change aspect ratio of images and text when resizing smaller as it was getting too gnarly to read
+ */
+@media only screen and (max-width: 1200px) {
+    .RnDarticletextbox-tablet h3 {
+        padding-bottom: .5rem;
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 1086px) {
+    #RnDarticlesblock-tablet {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 4rem) * .4);
+    }
+    #RnDarticlesblock {
+        display: none;
+    }
+}
+/*
+ *      On smallest screens remove the R&D articles altogether, and just maximise the video.
+ */
+@media only screen and (max-width: 700px) {
+    #RnDarticlesblock-tablet {
+        display: none;
+    }
+    #RnDvideoblock {
+        width: 100%;
+    }
+    .RnDvideo {
+        width: 100%;
+    }
+    #RnDbar {
+        margin: 0 1.5rem;
+    }
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+#footerlinks {
+    display: flex;
+}
+.copyright,
+.footernav {
+    padding: .5rem 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #footerlinks {
+        display: none;
+    }
+}
+/* +----------------------+--------------------------------------------------------+  */
